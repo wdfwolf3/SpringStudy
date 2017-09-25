@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--<aop:aspectj-autoproxy />-->
+
+    <bean id="criticismEngine" class="com.wdf.aspect.CriticismEngineImpl">
+        <property name="criticismPool">
+            <list>
+                <value>wdf</value>
+                <value>wdf</value>
+                <value>wdf</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="criticAspect" class="com.wdf.aspect.CriticAspect"
+          factory-method="aspectOf">
+        <property name="criticismEngine" ref="criticismEngine"/>
+    </bean>
+</beans>

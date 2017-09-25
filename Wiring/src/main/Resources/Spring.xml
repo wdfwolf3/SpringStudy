@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+    <context:component-scan base-package="com.wdf.auto"/>
+
+    <!--<bean id="compactDisc" class="com.wdf.auto.SgtPeppers"/>-->
+
+    <!--<bean id="compactDisc1" class="com.wdf.auto.BlankDisc">-->
+    <!--<constructor-arg value="asdf"/>-->
+    <!--<constructor-arg value="dwoerj"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="compactDisc2" class="com.wdf.auto.BlankDisc"-->
+    <!--c:_0="asdf"-->
+    <!--c:_1="werer"/>-->
+
+    <!--<bean id="blankDiscs" class="com.wdf.xml.BlankDiscs">-->
+    <!--<constructor-arg value="asdf"/>-->
+    <!--<constructor-arg value="dwoerj"/>-->
+    <!--<constructor-arg>-->
+    <!--<null></null>-->
+    <!--</constructor-arg>-->
+    <!--</bean>-->
+
+    <!--<bean id="blankDiscs1" class="com.wdf.xml.BlankDiscs">-->
+    <!--<constructor-arg value="asdf"/>-->
+    <!--<constructor-arg value="dwoerj"/>-->
+    <!--<constructor-arg>-->
+    <!--<list>-->
+    <!--<value>sdjfakl</value>-->
+    <!--<value>sdfsakl</value>-->
+    <!--<value>sSDFSDK</value>-->
+    <!--</list>-->
+    <!--</constructor-arg>-->
+    <!--</bean>-->
+
+    <!--<bean id="cdPlayer" class="com.wdf.auto.CDPlayer">-->
+    <!--<constructor-arg ref="compactDisc" />-->
+    <!--</bean>-->
+
+    <!--<bean id="cdPlayer1" class="com.wdf.auto.CDPlayer"-->
+    <!--c:_0-ref="compactDisc"/>-->
+
+    <!--<bean id="cdPlayer2" class="com.wdf.xml.CDPlayer">-->
+    <!--<property name="compactDisc" ref="compactDisc"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="cdPlayer3" class="com.wdf.xml.CDPlayer"-->
+    <!--p:compactDisc-ref="compactDisc"/>-->
+
+    <!--<bean id="blankDiscs2" class="com.wdf.xml.BlankDisc"-->
+    <!--p:artist="sdaf"-->
+    <!--p:title="asdf">-->
+    <!--&lt;!&ndash;p:track-ref="trackList"&ndash;&gt;-->
+
+    <!--<property name="tracks">-->
+    <!--<list>-->
+    <!--<value>sadf</value>-->
+    <!--<value>sadf</value>-->
+    <!--<value>sadf</value>-->
+    <!--</list>-->
+    <!--</property>-->
+    <!--</bean>-->
+
+    <!--<util:list id="trackList">-->
+    <!--<value>dsafsdf</value>-->
+    <!--<value>dsafsdf</value>-->
+    <!--<value>dsafsdf</value>-->
+    <!--<value>dsafsdf</value>-->
+    <!--</util:list>-->
+</beans>
